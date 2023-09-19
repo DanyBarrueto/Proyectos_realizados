@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Forte";
+    color: aquamarine;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(209, 123, 10);
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(7, 152, 255, 0.5);
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    outline: none;
+    background: transparent;
+    color: rgb(0, 251, 255);
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #03e9f4;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    /* Agregamos una sombra sin animación al botón por defecto */
+    box-shadow: 0 0 0 transparent;
+}
+
+/* Estilo del botón con la animación de destello al hacer hover */
+.button-animated:hover {
+    background-color: #0390c4;
+    /* Aplicamos el efecto de destello al botón en el hover */
+    animation: btn-destello 1s infinite;
+}
+
+/* Estilo del botón con la animación de destello al hacer clic */
+.button-animated.active {
+    background-color: #0390c4;
+    /* Aplicamos el efecto de destello al botón al hacer clic */
+    animation: btn-destello 1s infinite;
+}
+
+/* Estilo de la opción seleccionada en el select */
+select option:checked {
+    background-color: #03e9f4;
+    color: #000000;
+}
+
+/* Estilo del borde de enfoque en los campos de entrada */
+input:focus,
+select:focus {
+    border-color: #03e9f4;
+    box-shadow: 0 0 5px rgba(3, 233, 244, 0.5);
+}
+
+#result {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #fff;
+}
+
+/* Animación de destello */
+@keyframes btn-destello {
+    0% {
+        box-shadow: 0 0 0 transparent;
+    }
+    50% {
+        box-shadow: 0 0 10px #03e9f4;
+    }
+    100% {
+        box-shadow: 0 0 0 transparent;
+    }
+}
